@@ -1,6 +1,6 @@
 package main
 
-import "github.com/RicardoPizano/logs/logger"
+import "github.com/RicardoPizano/go-logs/logger"
 
 func main() {
 	logger.CreateLogger(logger.Configuration{
