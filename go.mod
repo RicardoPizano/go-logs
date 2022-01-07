@@ -1,4 +1,4 @@
-module github.com/RicardoPizano/logs
+module github.com/RicardoPizano/go-logs
 
 go 1.17
 
