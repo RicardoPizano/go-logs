@@ -1,7 +1,7 @@
 package logger
 
 import (
-	"github.com/RicardoPizano/logs/logger"
+	"github.com/RicardoPizano/go-logs/logger"
 	"time"
 
 	"github.com/labstack/echo"
