@@ -84,7 +84,7 @@ func CreateLogger(config Configuration) {
 	log = logger
 }
 
-func getEnvVar(env string, defaultEnv bool) bool {
+func GetEnvVar(env string, defaultEnv bool) bool {
 	envVar, err := strconv.ParseBool(os.Getenv(env))
 	if err != nil {
 		return defaultEnv
@@ -92,7 +92,7 @@ func getEnvVar(env string, defaultEnv bool) bool {
 	return envVar
 }
 
-func getLogLevel(logLevel string) string {
+func GetLogLevel(logLevel string) string {
 	switch logLevel {
 	case "0":
 		return debugLevel
@@ -107,7 +107,7 @@ func getLogLevel(logLevel string) string {
 	}
 }
 
-func getHostname() string {
+func GetHostname() string {
 	if hostname == "" {
 		hostname, _ := os.Hostname()
 		return hostname
