@@ -77,11 +77,13 @@ type Configuration struct {
 //}
 
 func CreateLogger(config Configuration) {
-	logger, err := newZapLogger(config)
-	if err != nil {
-		print(err.Error())
+	if log == nil {
+		logger, err := newZapLogger(config)
+		if err != nil {
+			print(err.Error())
+		}
+		log = logger
 	}
-	log = logger
 }
 
 func GetEnvVar(env string, defaultEnv bool) bool {
