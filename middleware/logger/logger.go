@@ -4,7 +4,7 @@ import (
 	"github.com/RicardoPizano/go-logs/logger"
 	"time"
 
-	"github.com/labstack/echo"
+	"github.com/labstack/echo/v4"
 )
 
 // Logger :
